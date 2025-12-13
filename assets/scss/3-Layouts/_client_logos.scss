@@ -1,0 +1,95 @@
+.client_logos {
+    .has_line {
+        position: relative;
+        transform: translateY(44px);
+        width: 100%;
+        height: 2px;
+        background: #eaeaee;
+        bottom: 29px;
+    }
+    .text_line {
+        text-align: center;
+        padding: 0 10px;
+        position: relative;
+        background: white;
+        width: max-content;
+        color: $color-dark;
+        position: relative;
+    }
+    /*====================================
+        ========= has style1
+    =====================================*/
+    &.has_style1 {
+        .company-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include lg {
+                display: flex;
+                justify-content: center;
+            }
+            img {
+                max-width: 7rem;
+                margin-bottom: 30px;
+                transition: 0.25s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    /*====================================
+        ========= has style2
+    =====================================*/
+    &.has_style2 {
+        .brands {
+            box-shadow: $shadow_3;
+            border: 1px solid #ebedf3;
+            padding: 60px 0 30px;
+        }
+        .company-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include lg {
+                display: flex;
+                justify-content: center;
+            }
+            img {
+                max-width: 7rem;
+                margin-bottom: 30px;
+                transition: 0.25s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    /*====================================
+        ========= has style3
+    =====================================*/
+    &.has_style3 {
+        .brands {
+        }
+        .company-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include lg {
+                display: flex;
+                justify-content: center;
+            }
+            img {
+                max-width: 7rem;
+                margin-bottom: 30px;
+                transition: 0.25s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

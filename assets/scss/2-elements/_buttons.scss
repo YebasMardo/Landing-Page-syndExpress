@@ -1,0 +1,997 @@
+/*--------------------------------------------------------------
+## btn styles
+--------------------------------------------------------------*/
+
+input[type="submit"],
+button,
+.btn,
+a.btn input.btn,
+a.button,
+span.button,
+div.button {
+  color: rgb(255, 255, 255);
+  padding: 12px 18px;
+  min-height: 20px;
+  line-height: 20px;
+  @include border_radius();
+  @include animate();
+  font-weight: normal;
+  text-decoration: none;
+  vertical-align: middle;
+  outline: none;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  border-radius: $border_radius;
+  overflow: hidden;
+  will-change: transform, box-shadow;
+  &:not(.btn-outline):not(.btn-flat):not(.btn-link) {
+    .text {
+      color: #fff;
+    }
+  }
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -16px;
+    margin-right: 5px;
+    font-size: 20px;
+    position: relative;
+    stroke: 2px;
+    min-width: 20px;
+    height: 20px;
+    &-left {
+      margin-right: 5px;
+    }
+
+    &-right {
+      margin-left: 5px;
+    }
+  }
+
+  &:not(.text-hover) {
+    &:hover {
+      .icon {
+        &.icon-right {
+          &:before,
+          svg {
+            animation: hoverBtn ease-out 0.3s;
+          }
+        }
+
+        &.icon-left {
+          &:before,
+          svg {
+            animation: hoverBtn ease-out 0.3s reverse;
+          }
+        }
+
+        &:before {
+          color: inherit;
+        }
+      }
+    }
+
+    @keyframes hoverBtn {
+      0% {
+        transform: translateX(0px);
+      }
+
+      51% {
+        transform: translateX(20px);
+        opacity: 1;
+      }
+
+      52% {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+
+      53% {
+        opacity: 0;
+      }
+
+      54% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(0px);
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: $color_brand;
+    border-color: $color_brand;
+    opacity: 0.9;
+    outline: none;
+    box-shadow: inherit;
+    opacity: 0.9;
+  }
+
+  &.text-hover {
+    overflow: hidden;
+    position: relative;
+
+    .icon,
+    .text {
+      @include animate();
+    }
+
+    .icon {
+      max-width: 100%;
+      text-align: center;
+      height: 26px;
+      position: absolute;
+      top: calc(50% - 10px);
+      font-size: 20px;
+      left: 50%;
+      top: 50%;
+      margin: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    .text {
+      display: inline-block;
+      transform: translateY(-120%);
+      opacity: 0;
+    }
+
+    &:hover {
+      .icon {
+        transform: translate(-50%, 120%);
+        opacity: 0;
+      }
+
+      .text {
+        transform: none;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+p a.btn {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button[disabled],
+input[type="submit"][disabled] {
+  &.btn-white {
+    &:hover {
+      background-color: #fff;
+      color: $color_dark;
+    }
+  }
+
+  &.btn-primary {
+    &:hover {
+      background-color: $color_brand;
+      color: #fff;
+    }
+  }
+}
+/*--------------------------------------------------------------
+### Buttons: outline
+--------------------------------------------------------------*/
+
+.btn-outline,
+input[type="submit"].btn-outline,
+a.btn-outline {
+  background-color: transparent;
+  color: currentColor;
+
+  &:after,
+  &:before {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color_brand;
+    color: #fff;
+  }
+
+  &.btn-white {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: $color_dark;
+    }
+  }
+
+  &.disabled:hover {
+    background-color: transparent;
+    color: $color_dark;
+    border-color: $color_dark;
+    cursor: default;
+  }
+}
+
+/*--------------------------------------------------------------
+### Buttons: loading spinner
+--------------------------------------------------------------*/
+
+.btn-loading {
+  box-shadow: none;
+
+  &:before {
+    content: "";
+    position: relative;
+    display: inline-block !important;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    bottom: auto;
+    left: auto;
+    opacity: 1;
+    @include border_radius(50%);
+    border: 2px solid transparent;
+    border-top: 2px solid rgba(#fff, 0.7);
+    border-right: 2px solid rgba(#fff, 0.7);
+    background: transparent;
+    animation: 0.8s rotate cubic-bezier(0.99, 0.71, 0.22, 0.68) infinite;
+  }
+
+  &.btn-outline,
+  &.btn {
+    &:before {
+      margin-right: 8px;
+    }
+  }
+}
+
+.btn-loading {
+  &:before {
+    vertical-align: top;
+    margin-top: 1px;
+  }
+
+  .ion-left {
+    display: none;
+  }
+
+  &:hover {
+    transition: none;
+
+    &:before {
+      background: transparent;
+      width: 18px;
+      transition: none;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+/* =====================================================
+- - - - - - - - - 1/ Button sizes
+======================================================*/
+.btn-xs {
+  padding: 7px 0px;
+  min-width: 100px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+.btn-sm {
+  padding: 8px 12px;
+  min-width: 100px;
+  border-radius: 6px;
+  font-size: 15.5px;
+}
+
+.btn-lg {
+  padding: 9px 20px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+.btn-xl {
+  padding: 11px 22px;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* ==================================================+===
+- - - - - - - - - 2/ Button variations
+=======================================================*/
+.btn-primary {
+  background: $color_brand;
+  color: $color_white;
+  border: none !important ;
+  transition: 0.4s ease-in-out;
+
+  &.btn-sh {
+    box-shadow: 0 14px 35px -11px $color_brand;
+  }
+
+  &.btn-outline {
+    border: solid 2px $color_brand;
+    background: transparent !important;
+    color: $color_brand;
+  }
+
+  &.btn-outline-bottom {
+    border-bottom: solid 3px $color_brand;
+    background: transparent !important;
+    color: $color_brand !important;
+  }
+
+  &.btn-hover-line {
+    &:hover {
+      background: transparent;
+      border: solid 2px $color_brand;
+      color: $color_brand;
+    }
+  }
+
+  &:hover {
+    outline: none;
+    background: darken($color_brand, 2%) !important;
+    border: solid 2px $color_brand;
+  }
+}
+.btn-secondary {
+  background: $color_brand_second;
+  color: $color_white;
+  transition: 0.4s ease-in-out;
+
+  &:hover {
+    background: darken($color_brand_second, 10%) !important ;
+    color: $color_white;
+  }
+
+  &.btn-sh {
+    box-shadow: 0 14px 35px -11px $color_brand_second;
+  }
+
+  &.btn-outline {
+    border: solid 2px $color_brand_second;
+    background: transparent !important;
+    color: $color_brand_second;
+  }
+
+  &.btn-outline-bottom {
+    border-bottom: solid 3px $color_brand_second;
+    background: transparent !important;
+    color: $color_brand !important;
+  }
+
+  &.btn-hover-line {
+    &:hover {
+      background: transparent;
+      border: solid 2px $color_brand_second;
+      color: $color_brand_second;
+    }
+  }
+}
+.btn-orange {
+  background: #ffe4db;
+  color: #ff784b;
+  border: solid 2px $color_brand_second;
+  transition: 0.4s ease-in-out;
+  border: none;
+}
+
+.btn-white {
+  background: white;
+  border: solid 1px rgba(10, 33, 65, 0.05);
+  color: $color_dark;
+  box-shadow: 0px 2px 4px #7e8eb11f !important;
+
+  span::after {
+    color: $color_dark !important;
+  }
+
+  &.btn-outline {
+    color: white;
+    border: solid 2px white;
+  }
+  &:hover {
+    opacity: 0.8;
+    background: white;
+    color: $color_brand !important;
+    box-shadow: 0 9px 6px rgba(0, 0, 0, 0.1), 0 -50px 0 rgba(0, 0, 0, 0) inset;
+    border: solid 1px rgba(10, 33, 65, 0.05) !important;
+  }
+}
+
+.btn-dark {
+  background: $color_dark;
+  color: $color_white;
+  border: solid 1px $color_dark;
+
+  &:hover {
+    color: $color_brand_light !important;
+    background: $color_dark;
+    border: solid 1px $color_dark;
+  }
+
+  &.btn-sh {
+    box-shadow: 0 14px 35px -11px $color_dark;
+  }
+
+  &.btn-outline {
+    border: solid 2px $color_dark;
+    background: transparent !important;
+    color: $color_dark;
+    &:hover {
+      color: $color_brand !important;
+    }
+  }
+
+  &.btn-outline-bottom {
+    border-bottom: solid 3px $color_dark;
+    background: transparent !important;
+    color: $color_dark;
+  }
+}
+
+/* ==================================================+===
+- - - - - - - - - 3 / outher button
+=======================================================*/
+button.close {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    height: 20px;
+    width: 40px;
+    // background-image: url(../images/others/deco_plus.svg);
+    background-size: contain;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    color: white;
+    outline: none;
+    box-shadow: none;
+    border: none;
+  }
+}
+
+/*=== Small Button ====
+==================*/
+.btn_sm_primary {
+  padding: 0.7rem 1.55rem;
+  font-size: 15px;
+  text-align: center;
+  @include prefixer(transition, 0.3s, webkit moz o ms);
+  &:hover {
+    opacity: 0.9;
+  }
+}
+/*=== Medium Button ====
+==================*/
+.btn_md_primary {
+  padding: 0.85rem 1.8rem;
+  font-size: 15px;
+  text-align: center;
+  @include prefixer(transition, 0.3s, webkit moz o ms);
+  &:hover {
+    opacity: 0.9;
+  }
+}
+/*=== Large Button ====
+==================*/
+.btn_lg_primary {
+  padding: 0.9rem 2.3rem;
+  font-size: 15px;
+  text-align: center;
+  @include prefixer(transition, 0.3s, webkit moz o ms);
+  &:hover {
+    opacity: 0.9;
+  }
+}
+/*=== XLarge Button ====
+==================*/
+.btn_xl_primary {
+  padding: 1.1rem 2.3rem;
+  font-size: 15px;
+  text-align: center;
+  @include prefixer(transition, 0.3s, webkit moz o ms);
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/*-----------------------------
+  btn-default
+-----------------------------*/
+.header-nav-center {
+  .btn-default {
+    margin-right: 0.5rem;
+  }
+}
+
+/*-----------------------------
+  btn video
+-----------------------------*/
+.btn-video {
+  background-color: $color_brand;
+  color: $color_white;
+  padding: 0.9rem 1.55rem;
+  text-align: center;
+  position: relative;
+  &:before {
+    background: $color_brand;
+    border-radius: 50px;
+    content: "";
+    display: block;
+    height: 100%;
+    opacity: 0.25;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    @include prefixer(animation, ripple 1.3s infinite cubic-bezier(0.29, -0.01, 0.17, 0.95), webkit moz o ms);
+  }
+  &.ripple_box {
+    &:before {
+      border-radius: 8px;
+    }
+  }
+  .tio {
+    vertical-align: sub;
+    margin-right: 0.2rem;
+  }
+  &:hover {
+    color: $color_white;
+  }
+}
+
+/*-----------------------------
+  btn video Circle
+-----------------------------*/
+.btn-ripple_circle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icon {
+    background-color: $color_brand;
+    color: $color_white;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    position: absolute;
+    border-radius: 50%;
+  }
+  .effect_ripp {
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    opacity: 0.25;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: $gray-color;
+    @include prefixer(animation, ripple_Circle 1.3s infinite cubic-bezier(0.29, -0.01, 0.17, 0.95), webkit moz o ms);
+  }
+  .tio {
+    vertical-align: middle;
+    font-size: 24px;
+    margin: 0;
+  }
+  &:hover {
+    color: $color_white;
+  }
+}
+
+/*-----------------------------
+  play_video
+-----------------------------*/
+.play_video {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  background-color: $color_dark;
+  padding: 0;
+  @include prefixer(transition, 0.3s, webkit moz o ms);
+  &::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    background: rgba($color_dark, 0.1);
+    border-radius: 50%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgba($color_dark, 0.1);
+    @include prefixer(animation, pulseRipple 2.5s ease-in-out infinite, webkit moz o ms);
+  }
+  &:focus {
+    background-color: $color_dark;
+  }
+  .tio {
+    font-size: 24px;
+    color: $color_white;
+  }
+}
+
+/*-----------------------------
+  Smartphone app
+-----------------------------*/
+.app_smartphone {
+  .btn--app {
+    display: inline-block;
+    margin-right: 1.5rem;
+    .icon {
+      border-radius: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: $aquamarine-color;
+      padding: 0.75rem;
+      margin-right: 0.75rem;
+      .tio {
+        color: $color_white;
+        font-size: 25px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+    .txt {
+      span {
+        color: $light-color;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      h4 {
+        font-weight: 400;
+        color: $color_white;
+        font-size: 18px;
+        margin-top: 0.2rem;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+/*-----------------------------
+  Menu Mobile
+-----------------------------*/
+.menu {
+  color: $color_dark;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  -webkit-appearence: none;
+  -webkit-tap-highlight-color: transparent;
+  &.ripplemenu {
+    &:active {
+      &:before {
+        background: $color_brand;
+        border-radius: 50%;
+        content: "";
+        display: block;
+        height: 100%;
+        opacity: 0.25;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        top: 0;
+        left: -9px;
+        animation: RippleMenu 0.3s cubic-bezier(0.29, -0.01, 0.17, 0.95);
+      }
+    }
+  }
+  svg {
+    width: 44px;
+    height: 48px;
+    top: -6px;
+    left: -14px;
+    stroke: $color_dark;
+    stroke-width: 0.2rem;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    display: block;
+    position: absolute;
+    @include maxSmall {
+      left: 0;
+    }
+    path {
+      transition: stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s),
+        stroke-dashoffset var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s);
+      stroke-dasharray: var(--array-1, 26px) var(--array-2, 100px);
+      stroke-dashoffset: var(--offset, 126px);
+      transform: translateZ(0);
+      &:nth-child(2) {
+        --duration: 0.7s;
+        --easing: ease-in;
+        --offset: 100px;
+        --array-2: 74px;
+      }
+      &:nth-child(3) {
+        --offset: 133px;
+        --array-2: 107px;
+      }
+    }
+  }
+  &.active {
+    svg {
+      path {
+        --offset: 57px;
+        &:nth-child(1),
+        &:nth-child(3) {
+          --delay: 0.15s;
+          --easing: cubic-bezier(0.2, 0.4, 0.2, 1.1);
+        }
+        &:nth-child(2) {
+          --duration: 0.4s;
+          --offset: 2px;
+          --array-1: 1px;
+        }
+        &:nth-child(3) {
+          --offset: 58px;
+        }
+      }
+    }
+  }
+}
+/*-----------------------------
+  Button DropDown Download
+-----------------------------*/
+.drop_download {
+  position: relative;
+  color: $color_white;
+  font-size: 15px;
+  padding: 0.6rem 1.75rem;
+  border-radius: 8px;
+  text-align: center;
+  @include prefixer(transition, 0.3s, webkit moz o ms);
+  .links-btn {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    a {
+      color: $currency-p-color;
+      font-size: 14px;
+      display: block;
+      padding-top: 0.8rem;
+      text-align: left;
+      padding-left: 0.25rem;
+      &:nth-child(1) {
+        transform: translate(-12px);
+      }
+      &:nth-child(2) {
+        transform: translate(-16px);
+      }
+      &:nth-child(3) {
+        transform: translate(-22px);
+      }
+      @include prefixer(transition, 0.3s, webkit moz o ms);
+    }
+  }
+  &:hover {
+    color: $color_white;
+    &:before {
+      content: "";
+      background-color: rgba($color_white, 0.1);
+      height: 155px;
+      width: 130px;
+      position: absolute;
+      border-radius: 8px;
+      left: 0;
+      top: 0;
+    }
+    .links-btn {
+      opacity: 1;
+      pointer-events: auto;
+      a {
+        transform: translate(0px);
+        &:nth-child(1) {
+          @include prefixer(transition, 0.2s, webkit moz o ms);
+        }
+        &:nth-child(2) {
+          @include prefixer(transition, 0.4s, webkit moz o ms);
+        }
+        &:nth-child(3) {
+          @include prefixer(transition, 0.5s, webkit moz o ms);
+        }
+        &:hover {
+          color: $color_white;
+        }
+      }
+    }
+  }
+}
+
+/*-----------------------------
+  Button Cryptocurrency (Dark
+-----------------------------*/
+.button--click {
+  .btn-token {
+    border-radius: 8px;
+    font-size: 15.5px;
+    font-weight: 500;
+    text-align: center;
+    color: $color_white;
+    margin: 0 0.75rem;
+    display: inline-flex;
+    justify-content: center;
+    &.c-gradient {
+      @include prefixer(background, linear-gradient(90deg, $sky-color 0%, $magenta-color 100%), webkit moz o ms);
+    }
+    &.defalult {
+      border: 1px solid rgba($color_white, 0.4);
+    }
+  }
+}
+
+/*-----------------------------
+  Button Read More
+-----------------------------*/
+.btn_readmore {
+  color: $color_brand;
+  font-size: 15.5px;
+  position: relative;
+  padding-left: 0;
+  @include prefixer(transition, 0.4s, webkit moz o ms);
+  &:before {
+    content: "";
+    position: absolute;
+    left: -0.7rem;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    background-color: rgba($color_brand, 0.1);
+    @include prefixer(transition, 0.4s cubic-bezier(0.4, 0.2, 0.01, 1.01), webkit moz o ms);
+  }
+  &:hover {
+    color: $color_brand;
+    &:before {
+      width: 0;
+    }
+  }
+}
+
+/*-----------------------------
+  Back to top with progress indicator
+-----------------------------*/
+.prgoress_indicator {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 2px rgba($color_brand, 0.2);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  @include prefixer(transform, translateY(15px), webkit moz o ms);
+  @include prefixer(transition, all 200ms linear, webkit moz o ms);
+  &.active-progress {
+    opacity: 1;
+    visibility: visible;
+    @include prefixer(transform, translateY(0), webkit moz o ms);
+  }
+  &::after {
+    position: absolute;
+    font-family: "The-Icon-of";
+    content: "\e9a2";
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color: rgba($color_brand, 0.2);
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    @include prefixer(transition, all 200ms linear, webkit moz o ms);
+  }
+  &::before {
+    position: absolute;
+    font-family: "The-Icon-of";
+    content: "\e9a2";
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    opacity: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+    @include prefixer(transition, all 200ms linear, webkit moz o ms);
+  }
+  &:hover {
+    &::after {
+      color: $color_brand;
+    }
+    &:before {
+      opacity: 1;
+    }
+  }
+  svg {
+    path {
+      fill: none;
+    }
+    &.progress-circle {
+      path {
+        stroke: $color_brand;
+        stroke-width: 4;
+        box-sizing: border-box;
+        @include prefixer(transition, all 200ms linear, webkit moz o ms);
+      }
+    }
+  }
+}
+
+/*-----------------------------
+  btn__more
+-----------------------------*/
+.btn__more {
+  .tio {
+    vertical-align: middle;
+    @include prefixer(transition, 0.3s, webkit moz o ms);
+  }
+  &:hover {
+    .tio {
+      color: $color_dark;
+      font-size: 18px;
+      margin-left: 5px;
+    }
+  }
+}

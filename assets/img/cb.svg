@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.246" height="65.246" viewBox="0 0 65.246 65.246">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="17.904" height="35.808" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="11.365" height="22.73" transform="translate(0)" fill="#bbb"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_10" data-name="Rectangle 10" width="8.16" height="22.73" fill="#00a3ff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_863" data-name="Group 863" transform="translate(-280.617 -433)">
+    <path id="Path_1340" data-name="Path 1340" d="M32.623,0A32.623,32.623,0,1,1,0,32.623,32.623,32.623,0,0,1,32.623,0Z" transform="translate(280.617 433)" fill="#3316dd"/>
+    <g id="Group_720" data-name="Group 720" transform="translate(298.591 447.707)">
+      <path id="Rectangle_1133" data-name="Rectangle 1133" d="M0,0H0A9.222,9.222,0,0,1,9.222,9.222v6.523a1.546,1.546,0,0,1-1.546,1.546H1.546A1.546,1.546,0,0,1,0,15.744V0A0,0,0,0,1,0,0Z" transform="translate(0.011 0.592)" fill="#00e8ff"/>
+      <g id="Group_714" data-name="Group 714" transform="translate(0)">
+        <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(0)" clip-path="url(#clip-path)">
+          <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="17.904" cy="17.904" rx="17.904" ry="17.904" fill="#fff"/>
+        </g>
+        <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(17.904 13.078)" clip-path="url(#clip-path-2)">
+          <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="11.365" cy="11.365" rx="11.365" ry="11.365" transform="translate(-11.365)" fill="#00e8ff"/>
+        </g>
+        <g id="Mask_Group_6" data-name="Mask Group 6" transform="translate(17.904 13.078)" clip-path="url(#clip-path-3)" style="isolation: isolate">
+          <ellipse id="Ellipse_7" data-name="Ellipse 7" cx="8.597" cy="8.597" rx="8.597" ry="8.597" transform="translate(-9.034)" fill="#00a3ff" style="mix-blend-mode: overlay;isolation: isolate"/>
+          <ellipse id="Ellipse_189" data-name="Ellipse 189" cx="8.597" cy="8.597" rx="8.597" ry="8.597" transform="translate(-9.034)" fill="#00a3ff" style="mix-blend-mode: overlay;isolation: isolate"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

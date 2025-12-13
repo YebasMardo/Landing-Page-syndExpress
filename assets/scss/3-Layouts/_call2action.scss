@@ -1,0 +1,69 @@
+.call2action {
+    &.has_style1 {
+        background: $color_grad;
+        @include before {
+            background: url(../img/decorations/circle.svg);
+            height: 15rem;
+            width: 15rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: -5rem;
+            opacity: 0.3;
+        }
+        @include after {
+            background: url(../img/decorations/circle.svg);
+            height: 15rem;
+            width: 15rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            bottom: -5rem;
+            right: 0;
+            opacity: 0.3;
+        }
+    }
+    &.has_style2 {
+        background: $color_dark;
+        overflow: hidden;
+        @include before {
+            background: url(../img/decorations/circle.svg);
+            height: 15rem;
+            width: 15rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: -5rem;
+            opacity: 0.3;
+        }
+        .form_call2action {
+            background: white;
+            border-radius: 5px;
+            box-shadow: $shadow_3;
+            padding: 30px;
+            @include tablet_vert_screen {
+                padding: 15px;
+            }
+        }
+    }
+    &.has_style3 {
+        background: $color_brand_light;
+        border-radius: 10px;
+        padding: 30px;
+        .img_top {
+            margin-top: -4rem;
+            height: 4rem;
+            width: 4rem;
+            margin-bottom: 20px;
+        }
+    }
+    &.has_style4 {
+        background: $color_brand_light;
+    }
+    &.has_style5 {
+        background: $color_grad;
+        .form_call2action {
+            background: rgba(255, 255, 255, 0.048);
+            border-radius: 5px;
+            padding: 30px;
+            width: 100%;
+        }
+    }
+}

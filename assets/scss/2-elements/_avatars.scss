@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+## avatar styles
+--------------------------------------------------------------*/
+.avatar {
+    width: 4.5rem;
+    height: 4.5rem;
+    &.has_style1 {
+        box-shadow: 0 33px 88px 0 #1d0e6221;
+        border-radius: 50%;
+        border: 7px solid #fff;
+    }
+    &.avatar-sm {
+        width: 3rem;
+        height: 3rem;
+    }
+    &.avatar-md {
+        width: 5rem;
+        height: 5rem;
+    }
+    &.avatar-lg {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+.avatar-group {
+    display: flex;
+    margin-left: 25px;
+
+    .avatar-item {
+        width: 3rem;
+        height: 3rem;
+        margin-left: -25px;
+        border: solid 6px white;
+    }
+}

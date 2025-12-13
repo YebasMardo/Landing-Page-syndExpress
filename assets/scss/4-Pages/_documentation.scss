@@ -1,0 +1,222 @@
+.documentation_page {
+    .site-header {
+        background: white;
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    .side {
+        position: relative;
+        width: 21rem;
+    }
+    .docs-sidenav {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        overflow-y: scroll;
+        border-radius: $border_radius;
+        background: white;
+    }
+    .first_title {
+        margin-bottom: $spacer_30;
+    }
+    .fa-star {
+        color: rgb(243, 211, 67);
+    }
+    .doc_box {
+        padding: $spacer_60 $spacer_40;
+        box-shadow: -20px -17px 36px -21px rgba(29, 14, 98, 0.1);
+        margin-top: $spacer_60;
+        border: 1px solid rgb(233, 236, 240);
+        border-radius: $border_radius;
+        max-width: 65rem;
+        margin: 60px 0;
+        margin-left: 60px;
+        @include tablet_vert_screen {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        img {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem !important;
+        }
+
+        ul {
+            margin-bottom: 2rem;
+            border-left: solid 0.3rem #f7f7f7;
+            padding-left: 1rem;
+            cursor: default;
+
+            li {
+                line-height: 2;
+            }
+        }
+        .box-title {
+            @include fluid-type($font_size_h1_mobile, $font_size_h1);
+            line-height: 1.05;
+            margin-bottom: 30px;
+            border-bottom: solid 2px $color_light;
+            padding-bottom: 30px;
+            text-transform: capitalize;
+        }
+        .color-span {
+            color: #5a52ff;
+        }
+        .style_guide {
+            .box-title {
+                font-size: 26px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .box-sub-title {
+        margin: $spacer_30 0;
+
+        position: relative;
+        @include fluid-type($font_size_h3_mobile, $font_size_h3);
+        line-height: 1.1;
+        &::before {
+            content: "#";
+            color: $color_brand;
+        }
+    }
+    .box-sub2-title {
+        background: rgba(61, 123, 194, 0.078);
+        @include fluid-type($font_size_h4_mobile, $font_size_h4);
+        margin: 2rem 0;
+        &::before {
+            content: "##";
+            color: $color_brand;
+        }
+    }
+    .structure {
+        background: #ffffff;
+        border-radius: 5px;
+        padding: 30px 60px !important;
+        border: solid 1px #f7f7f7 !important;
+        box-shadow: $shadow_3;
+        transition: 0.3s;
+
+        &:hover {
+            box-shadow: none;
+        }
+        .fa-folder-open {
+            color: #ffe16e;
+        }
+
+        .fa-folder {
+            color: #afa8ff;
+        }
+
+        .file {
+            color: #ffa8a8;
+        }
+
+        .file2 {
+            color: #a8ffe5;
+        }
+
+        .file3 {
+            color: #aea8ff;
+        }
+    }
+    #docsSidenav {
+        padding: $spacer_60;
+        background-color: $color_brand_light;
+        border-right: 1px solid $color_light;
+        max-width: 21rem;
+        h5 {
+            text-transform: uppercase;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-bottom: 20px !important;
+            margin-top: 20px !important;
+            display: flex;
+            align-items: center;
+        }
+        ul {
+        }
+        a {
+            font-size: 15px;
+        }
+        .icon {
+            margin-right: 10px;
+            svg {
+                fill: $color_dark !important;
+            }
+        }
+    }
+
+    .border {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        border-top: 1px solid #eaf2fe;
+    }
+}
+
+pre[class*="language-"] {
+    font-size: 14px;
+    padding: 1em;
+    margin: 0;
+    overflow: auto;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: none;
+    border-radius: $border_radius;
+}
+pre[class*="language-"],
+:not(pre) > code[class*="language-"] {
+    background-color: #1f2937 !important;
+}
+
+div.code-toolbar > .toolbar a,
+div.code-toolbar > .toolbar .copy,
+div.code-toolbar > .toolbar span {
+    color: white;
+    font-size: 0.8em;
+    padding: 10px 1rem;
+    background: $color_brand !important ;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: hsl(252, 20%, 50%);
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: #6edfff;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: #baea80;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+    color: hsl(272, 26%, 72%);
+}
+span.inline-color-wrapper {
+    height: 16px;
+    width: 16px;
+    margin: 0 6px 0 0;
+    box-sizing: border-box;
+    border: 1px solid #61448a;
+    outline: none;
+    border-radius: 50%;
+}

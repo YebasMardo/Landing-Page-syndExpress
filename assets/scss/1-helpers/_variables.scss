@@ -1,0 +1,79 @@
+$navbar-height: 6rem;
+// ------ Global variable fonts
+$font-primary: "Sora-Bold";
+$font-secondary: "Sora";
+
+// Animation & transitions
+$transition_function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// Typography - font families
+$font_main: "Sora", -apple-system, sans-serif, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font_code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font_pre: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font_titles: "Sora-Bold", -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Typography - font sizes
+$font_size_regular: 16px;
+$font_size_small: 0.94rem;
+
+$font_size_large: 17px;
+$font_size_large_mobile: 16.6px;
+
+$font_size_h1: 64px;
+$font_size_h1_mobile: 46px;
+
+$font_size_h2: 54px;
+$font_size_h2_mobile: 40px;
+
+$font_size_h3: 40px;
+$font_size_h3_mobile: 36px;
+
+$font_size_h4: 26px;
+$font_size_h4_mobile: 24px;
+
+$font_size_h5: 20px;
+$font_size_h5_mobile: 19px;
+
+$font_lh: 1.65;
+
+// Grid spacer
+
+$grid_spacer: 20px;
+
+// Spacers
+
+$container: 1300px;
+$size_offset-fullwidth-container: 5%;
+
+$size_page-offset-top: 80px;
+$size_page-offset-bottom: 90px;
+
+$size_page-offset-top-md: 30px;
+$size_page-offset-bottom-md: 30px;
+
+$spacer_100: 100px;
+$spacer_90: 90px;
+$spacer_80: 80px;
+$spacer_70: 70px;
+$spacer_60: 60px;
+$spacer_55: 55px;
+$spacer_50: 50px;
+$spacer_45: 45px;
+$spacer_40: 40px;
+$spacer_35: 35px;
+$spacer_30: 30px;
+$spacer_25: 25px;
+$spacer_20: 20px;
+$spacer_15: 15px;
+
+$spacer_10: 10px;
+
+$spacer_5: 5px;
+
+$border_radius: 5px;
+
+$shadow_1: 52px 52px 74px 0 rgba(115, 131, 169, 0.08);
+$shadow_2: 0 40px 40px -20px rgba(23, 29, 48, 0.1);
+$shadow_3: 0 33px 88px 0 #1d0e6211;

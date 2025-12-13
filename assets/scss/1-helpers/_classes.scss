@@ -1,0 +1,1200 @@
+/*=========================================
+    - backgrounds    
+=========================================*/
+
+.bg_brand {
+    background: $color_brand !important ;
+}
+.bg_brand_light {
+    background: $color_brand_light !important ;
+}
+.bg_dark {
+    background: $color_dark !important ;
+}
+
+.bg_white {
+    background: $color_white !important;
+}
+.bg_grad {
+    background: $color_grad !important;
+}
+.bg_light {
+    background: $color_light !important;
+}
+.bg_error {
+    background: $color_error !important;
+}
+.bg_success {
+    background: $color_success !important;
+}
+
+.bg-blue {
+    background-color: $color_brand !important;
+}
+.bg-gold {
+    background-color: $gold-color !important;
+}
+.bg-green {
+    background-color: $green-color !important;
+}
+.bg-aquamarine {
+    background-color: $aquamarine-color !important;
+}
+.bg-orange {
+    background-color: $orange-color !important;
+}
+.bg-red {
+    background-color: $red-color !important;
+}
+.bg-yollow {
+    background-color: $yollow-color !important;
+}
+.bg-gray {
+    background-color: $gray-color !important;
+}
+.bg-light {
+    background-color: $light-color !important;
+}
+.bg-beiget {
+    background-color: $beiget-color !important;
+}
+.bg-skuy {
+    background-color: $sky-color !important;
+}
+.bg-magenta {
+    background-color: $magenta-color !important;
+}
+.bg-green2 {
+    background-color: $green2-color !important;
+}
+.bg-currency-d {
+    background-color: $currency-d-color !important;
+}
+.bg-orange-red {
+    background-color: $orange-red-color !important;
+}
+.bg-currency-p {
+    background-color: $currency-p-color !important;
+}
+.bg-sea {
+    background-color: $sea-color !important;
+}
+.bg-purple {
+    background-color: $purple-color !important;
+}
+.bg-lightgreen {
+    background-color: $lightgreen-color !important;
+}
+.bg-black {
+    background-color: $black-color !important;
+}
+.bg-snow {
+    background-color: $bg-color !important;
+}
+.bg-blue2 {
+    background-color: $blue2-color !important;
+}
+.bg-orange2 {
+    background-color: $orange2-color !important;
+}
+.btn-block {
+    width: 100%;
+}
+
+/*=========================================
+    - colors    
+=========================================*/
+.color_brand {
+    color: $color_brand !important;
+}
+.color_second {
+    color: $color_brand_second !important;
+}
+
+.color_light {
+    color: $color_brand_light !important;
+}
+.color_white {
+    color: $color_white !important;
+}
+.color_light {
+    color: $color_light !important;
+}
+.color_neutral {
+    color: $color_neutral !important;
+}
+.color_dark {
+    color: $color_dark !important;
+}
+.color_dark_lighten {
+    color: $color_dark_lighten !important;
+}
+.color_error {
+    color: $color_error !important;
+}
+.color_success {
+    color: $color_success !important;
+}
+
+/* =======================================================
+  - - - - - - - - 1 / spacing
+========================================================== */
+
+.half_hero {
+    margin-top: -200px !important;
+}
+.space_half_hero {
+    margin-top: 100px !important;
+}
+.top-15 {
+    top: 15px;
+}
+.height-100_reset {
+    margin-top: -100px;
+}
+.height-100 {
+    height: 100px;
+}
+.top_hero_reset {
+    height: 20rem;
+}
+.top_hero {
+    margin-top: -20rem;
+}
+/* =======================================================
+  - - - - - - - - 2 / Padding classes
+========================================================== */
+.py-1 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+.py-2 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+.py-3 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.py-4 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+.py-5 {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+.py-6 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+}
+
+.py-7 {
+    padding-top: 7rem !important;
+    padding-bottom: 7rem !important;
+}
+.py-8 {
+    padding-top: 8rem !important;
+    padding-bottom: 8rem !important;
+}
+.py-9 {
+    padding-top: 9rem !important;
+    padding-bottom: 9rem !important;
+}
+.py-10 {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+}
+.p-0 {
+    padding: 0 !important;
+}
+
+.p-helf {
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px !important;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.p-40 {
+    padding: 40px;
+}
+
+.p-50 {
+    padding: 50px;
+}
+
+.p-60 {
+    padding: 60px;
+}
+
+.p-70 {
+    padding: 70px;
+}
+
+.p-80 {
+    padding: 80px;
+}
+
+.p-90 {
+    padding: 90px;
+}
+
+.p-100 {
+    padding: 10rem;
+}
+
+/* ------------------------------------ padding top*/
+
+.pt-helf {
+    padding-top: 5px;
+}
+
+.pt-0 {
+    padding-top: 0rem !important;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pt-70 {
+    padding-top: 70px;
+}
+
+.pt-80 {
+    padding-top: 80px !important;
+}
+
+.pt-90 {
+    padding-top: 90px;
+}
+
+.pt-100 {
+    padding-top: 100px;
+}
+.pt-120 {
+    padding-top: 120px;
+}
+
+/* ------------------------------------ padding bottom*/
+
+.pb-helf {
+    padding-bottom: 5px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.pb-70 {
+    padding-bottom: 70px;
+}
+
+.pb-80 {
+    padding-bottom: 80px;
+}
+
+.pb-90 {
+    padding-bottom: 90px;
+}
+
+.pb-100 {
+    padding-bottom: 10rem;
+}
+
+/* ------------------------------------ padding bottom*/
+
+.pl-helf {
+    padding-left: 0.5px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.pl-40 {
+    padding-left: 40px;
+}
+
+.pl-50 {
+    padding-left: 50px;
+}
+
+.pl-60 {
+    padding-left: 60px;
+}
+
+.pl-70 {
+    padding-left: 70px;
+}
+
+.pl-80 {
+    padding-left: 80px;
+}
+
+.pl-90 {
+    padding-left: 90px;
+}
+
+.pl-100 {
+    padding-left: 10rem;
+}
+
+/* ------------------------------------ padding bottom*/
+.pr-sm-0 {
+    @include sm {
+        padding-right: 0 !important;
+    }
+}
+
+.pl-sm-0 {
+    @include sm {
+        padding-left: 0 !important;
+    }
+}
+
+.pr-helf {
+    padding-right: 5px;
+}
+
+.pr-10 {
+    padding-right: 10px !important;
+}
+
+.pr-20 {
+    padding-right: 20px !important;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.pr-40 {
+    padding-right: 40px;
+}
+
+.pr-50 {
+    padding-right: 50px;
+}
+
+.pr-60 {
+    padding-right: 60px;
+}
+
+.pr-70 {
+    padding-right: 70px;
+}
+
+.pr-80 {
+    padding-right: 80px;
+}
+
+.pr-90 {
+    padding-right: 90px;
+}
+
+.pr-100 {
+    padding-right: 10rem;
+}
+
+/* =======================================================
+  - - - - - - - - 2 / Margin classes
+========================================================== */
+
+@include sm {
+    .mr-0-sm {
+        margin-right: 0rem !important;
+    }
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-helf {
+    margin: 0.5px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.m-30 {
+    margin: 30px;
+}
+
+.m-40 {
+    margin: 40px;
+}
+
+.m-50 {
+    margin: 50px;
+}
+
+.m-60 {
+    margin: 60px;
+}
+
+.m-70 {
+    margin: 70px;
+}
+
+.m-80 {
+    margin: 80px;
+}
+
+.m-90 {
+    margin: 90px;
+}
+
+.m-100 {
+    margin: 10rem;
+}
+
+/* ------------------------------------ margin top*/
+.mt-sm-30 {
+    @include sm {
+        margin-top: 30px;
+    }
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+.mb-40 {
+    margin-bottom: 40px !important;
+}
+.mb-30_reset {
+    margin-bottom: -30px !important;
+}
+.mb-1_reset {
+    margin-bottom: -1rem !important;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-30 {
+    margin-top: 30px !important
+    ;
+}
+
+.mt-helf {
+    margin-top: 0.5px;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt-100 {
+    margin-top: 10rem;
+}
+
+/* ------------------------------------ margin bottom*/
+
+.mb-helf {
+    margin-bottom: 0.5px;
+}
+.mb-1 {
+    margin-bottom: 1rem;
+}
+.mb-1_reset {
+    margin-bottom: -1rem;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-20_reset {
+    margin-bottom: -20px;
+}
+
+.mb-30_reset {
+    margin-bottom: -30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+/* ------------------------------------ padding bottom*/
+
+.ml-helf {
+    margin-left: 0.5px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+.ml-50 {
+    margin-left: 50px;
+}
+
+.ml-60 {
+    margin-left: 60px;
+}
+
+.ml-70 {
+    margin-left: 70px;
+}
+
+.ml-80 {
+    margin-left: 80px;
+}
+
+.ml-90 {
+    margin-left: 90px;
+}
+
+.ml-100 {
+    margin-left: 10px;
+}
+
+/* ------------------------------------ margin bottom*/
+
+.mr-helf {
+    margin-right: 0.5px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mr-40 {
+    margin-right: 40px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.mr-60 {
+    margin-right: 60px;
+}
+
+.mr-70 {
+    margin-right: 70px;
+}
+
+.mr-80 {
+    margin-right: 80px;
+}
+
+.mr-90 {
+    margin-right: 90px;
+}
+
+.mr-100 {
+    margin-right: 100px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-33 {
+    width: 33.33%;
+}
+
+/* =======================================================
+  - - - - - - - - 3 / hidden classes
+========================================================== */
+
+.lg-hidden {
+    @include lg {
+        display: none;
+    }
+}
+
+.md-hidden {
+    @include md {
+        display: none;
+    }
+}
+
+.sm-hidden {
+    @include sm {
+        display: none;
+    }
+}
+
+/* =======================================================
+  - - - - - - - - 5 /  flex desiplay
+========================================================== */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.start {
+        justify-content: flex-start;
+    }
+
+    &.center {
+        justify-content: center;
+    }
+
+    @include md {
+        &.md-center {
+            justify-content: center;
+        }
+    }
+
+    @include sm {
+        &.sm-center {
+            justify-content: center;
+        }
+    }
+
+    &.vcenter {
+        align-items: center;
+    }
+
+    &.end {
+        justify-content: flex-end;
+    }
+
+    &.vend {
+        align-items: flex-end;
+    }
+
+    &.between {
+        justify-content: space-between;
+    }
+
+    &.is-column {
+        flex-direction: column;
+    }
+}
+
+.white-link {
+    color: $color_white;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.7;
+        color: $color_white;
+        font-size: 15.5px;
+    }
+}
+
+/* =======================================================
+  - - - - - - - - 6 /  border-radius
+========================================================== */
+
+.border-rad5 {
+    border-radius: 5px;
+}
+
+.border-rad10 {
+    border-radius: 10px;
+}
+
+.border-rad15 {
+    border-radius: 15px;
+}
+
+.border-rad20 {
+    border-radius: 20px;
+}
+
+.border-rad50 {
+    border-radius: 50px;
+}
+
+/* =======================================================
+  - - - - - - - - 7 /  box-Shadows
+========================================================== */
+
+.sh_1 {
+    box-shadow: $shadow_1;
+    border: solid 1px #edf8fa;
+    border-radius: 15px;
+}
+.sh_2 {
+    box-shadow: $shadow_2;
+    border: solid 1px #edf8fa;
+    border-radius: 15px;
+}
+.sh_3 {
+    box-shadow: $shadow_3;
+    border: solid 1px #edf8fa;
+    border-radius: 15px;
+}
+
+/* =======================================================
+  - - - - - - - - 8 /  Animations
+========================================================== */
+
+@keyframes anim-up-down {
+    from {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    50% {
+        -webkit-transform: translate(0, 10px);
+        transform: translate(0, 10px);
+    }
+
+    to {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+.anim-up-down {
+    animation-name: anim-up-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animbg {
+    from {
+        background-size: 130%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background-size: 120%;
+        background-blend-mode: saturation;
+        background-repeat: no-repeat;
+    }
+
+    to {
+        background-size: 130%;
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes anim2 {
+    from {
+        height: 120%;
+        width: 120%;
+    }
+
+    50% {
+        height: 170%;
+        width: 170%;
+    }
+
+    70% {
+        height: 120%;
+        width: 120%;
+    }
+
+    to {
+        height: 130%;
+        width: 130%;
+    }
+}
+
+@keyframes anim1 {
+    from {
+        height: 180%;
+        width: 180%;
+    }
+
+    50% {
+        height: 140%;
+        width: 140%;
+    }
+
+    70% {
+        height: 150%;
+        width: 150%;
+    }
+
+    to {
+        height: 180%;
+        width: 180%;
+    }
+}
+
+/* =======================================================
+  - - - - - - - - 9 /  Text floats
+========================================================== */
+.text-primary {
+    color: $color_brand !important;
+}
+.text-secondary {
+    color: $color_brand_second !important;
+}
+
+/* ----------------------------- Font Size */
+
+.font-s-100 {
+    font-size: 10px;
+}
+
+.font-s-20 {
+    font-size: 20px;
+}
+
+.font-s-30 {
+    font-size: 30px;
+}
+
+.font-s-40 {
+    font-size: 40px;
+}
+
+.font-s-50 {
+    font-size: 50px;
+}
+
+.font-s-60 {
+    font-size: 60px;
+}
+
+.font-s-70 {
+    font-size: 70px;
+}
+
+.font-s-80 {
+    font-size: 80px;
+}
+
+.font-s-90 {
+    font-size: 90px;
+}
+
+.font-s-100 {
+    font-size: 100px;
+}
+
+/* ----------------------------- Font weight */
+
+.font-w-400 {
+    font-weight: 400 !important;
+}
+
+.font-w-500 {
+    font-weight: 500 !important;
+}
+
+.font-w-600 {
+    font-weight: 600 !important;
+}
+
+/* ----------------------------- Text floats */
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-deco {
+    text-decoration: underline;
+}
+
+/* =======================================================
+  - - - - - - - - 10 /  OTHER
+========================================================== */
+
+.before-none {
+    &::before {
+        content: none !important;
+    }
+}
+
+/* ----------------------------- display none classes  */
+
+.sm-none {
+    @include sm {
+        display: none !important;
+    }
+}
+
+.md-none {
+    @include md {
+        display: none;
+    }
+}
+
+.lg-none {
+    @include lg {
+        display: none;
+    }
+}
+
+.xl-none {
+    @include xl {
+        display: none;
+    }
+}
+
+/* ------------------------------------ display block classes  */
+
+.sm-block {
+    @include sm {
+        display: block;
+    }
+}
+
+.md-block {
+    @include md {
+        display: block;
+    }
+}
+
+.lg-block {
+    @include lg {
+        display: block;
+    }
+}
+
+.xl-block {
+    @include xl {
+        display: block;
+    }
+}
+
+.mb-sm-20 {
+    @include md {
+        margin-bottom: 20px;
+    }
+}
+
+.top-border {
+    border-top: solid 1px #f3f3f3;
+}
+
+.min-30 {
+    margin-bottom: -30px;
+}
+
+.min-40 {
+    margin-bottom: -40px;
+}
+
+.mt-section {
+    margin-top: 70px;
+}
+
+.mb-sm-30 {
+    @include md {
+        margin-bottom: 30px;
+    }
+}
+
+.rounded {
+    position: absolute;
+    width: 100%;
+    top: -11px;
+
+    @include lg {
+        top: -1px;
+    }
+}
+
+.top-0 {
+    top: 0 !important;
+}
+
+.mb-70 {
+    margin-bottom: 70px;
+}
+
+.min-20 {
+    margin-bottom: -20px;
+}
+
+.text-copyright {
+    color: rgba(255, 255, 255, 0.548) !important;
+}
+
+.max-30 {
+    max-width: 30rem;
+}
+
+.max-20 {
+    max-width: 20rem;
+}
+
+.min-60 {
+    margin-bottom: -60px;
+}
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+.spacer_header {
+    height: 100px;
+}
+.spacer_header_top {
+    height: 100px;
+}
+.spacer_10 {
+    height: $spacer_10;
+}
+.spacer_bottom {
+    padding-bottom: $spacer_90;
+}
+
+.filter-blur {
+    @include prefixer(background, rgba(255, 255, 255, 0.2), webkit moz o ms);
+    @include prefixer(backdrop-filter, saturate(1) blur(20px), webkit moz o ms);
+}
+
+.h-fit-content {
+    height: 100%;
+}
+.md\:flex {
+    display: flex;
+}

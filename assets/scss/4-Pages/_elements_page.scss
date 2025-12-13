@@ -1,0 +1,117 @@
+.elements_page {
+    .elements_sidebar {
+        background: $color_brand_light;
+        padding: 20px;
+        border-radius: 7px;
+
+        h5 {
+            margin-bottom: 10px;
+        }
+        .nav-item {
+            padding: 10px;
+            box-shadow: 0px 10px 20px rgba(10, 33, 65, 0.034), 0px 0px 2px rgba(0, 0, 0, 0.062);
+            margin-bottom: 10px;
+            background: $color_white;
+            border-radius: 5px;
+
+            a {
+                color: $color_dark;
+                font-size: 15.5px;
+            }
+        }
+    }
+    .top_title {
+        position: relative;
+
+        span {
+            position: absolute;
+            font-size: 18px;
+            background: $color_brand;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-left: 1rem;
+        }
+    }
+    .elements_box {
+        box-shadow: 0px 10px 20px rgba(10, 33, 65, 0.05), 0px 0px 2px rgba(0, 0, 0, 0.13);
+        padding: 20px;
+        margin-top: 30px;
+        .elements_title {
+            font-family: Sora !important;
+            font-size: 30px;
+            text-transform: capitalize;
+            font-family: $font-secondary !important ;
+            margin-bottom: 30px;
+        }
+        .elements_number {
+            margin-top: 4px;
+            color: #6b7280;
+            font-size: 15px;
+        }
+    }
+}
+.colors {
+    .color_item {
+        margin-bottom: 30px;
+    }
+    .color_palette {
+        height: 10rem;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+}
+.grid_element {
+    .col_grid {
+        padding: 20px 5px;
+        background-color: $color_brand_light;
+        text-align: center;
+    }
+}
+.element_block {
+    box-shadow: 0px 20px 40px rgba(10, 33, 65, 0.05), 0px 0px 2px rgba(0, 0, 0, 0.13);
+    margin-bottom: 40px;
+    overflow: hidden;
+    .element_head {
+        border-bottom: solid 1px rgba(10, 33, 65, 0.05);
+        .nav-link.active {
+            color: $color_brand;
+            background-color: rgba($color_brand, 0.15);
+            border: none;
+            border-radius: 5px;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            line-height: 100%;
+            height: fit-content;
+        }
+        .nav-link {
+            border: none;
+            border-radius: 5px;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+            line-height: 100%;
+            height: fit-content;
+            margin-right: 0.5rem;
+            color: $color_neutral;
+        }
+        .copy {
+            color: $color_neutral;
+            padding-left: 1rem;
+            border-radius: 0;
+            border-left: solid 1px rgba(107, 114, 128, 0.295);
+            font-size: 20px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+.head_elements_hero {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}

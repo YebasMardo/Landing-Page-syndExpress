@@ -1,0 +1,16 @@
+<svg id="Elements_Buttons_Combined_Icon_Play" data-name="Elements / Buttons / Combined / Icon / Play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6a3b6c"/>
+      <stop offset="1" stop-color="#be346a"/>
+    </linearGradient>
+  </defs>
+  <g id="Button">
+    <g id="Button-2" data-name="Button">
+      <path id="Oval" d="M25,0A25,25,0,1,1,0,25,25,25,0,0,1,25,0Z" fill="url(#linear-gradient)"/>
+      <g id="Icon" transform="translate(20 17.722)">
+        <path id="Path" d="M1.5.855A1,1,0,0,0,0,1.723V14.277a1,1,0,0,0,1.5.868L12.481,8.868a1,1,0,0,0,0-1.736Z" transform="translate(0 -0.722)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

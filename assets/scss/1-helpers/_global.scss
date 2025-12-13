@@ -1,0 +1,186 @@
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  //smoothing-Font
+  @include prefixer(font-smoothing, antialiased, webkit moz o ms);
+  font: {
+    family: "SoraStd", sans-serif;
+    size: 16px;
+  }
+  color: $color_dark;
+  @include prefixer(transition, 0.3s ease-in-out, webkit moz o ms);
+  &.modal-open {
+    padding-right: 0 !important;
+    overflow: auto;
+  }
+}
+
+#wrapper,
+#content {
+  width: 100%;
+  height: 100%;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p,
+// span,
+// button {
+//   @include prefixer(transition, 0.3s, webkit moz o ms);
+// }
+
+/*-----------------------------
+  button, input , a , btn
+-----------------------------*/
+button,
+input {
+  @include prefixer(outline, 0, webkit moz o ms);
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.btn,
+.btn.focus,
+.btn:active,
+.btn.active,
+.btn:focus {
+  @include prefixer(box-shadow, none, webkit moz o ms);
+  border: 0;
+}
+img {
+  @include prefixer(user-select, none, webkit moz o ms);
+}
+
+/*-----------------------------
+  Selection
+-----------------------------*/
+::selection {
+  background-color: $color_brand;
+  color: $color_white;
+}
+
+.title_sections {
+  margin-bottom: 6.25rem;
+  .before_title {
+    margin-bottom: 1.25rem;
+    span {
+      color: $color_dark;
+      font-size: 1rem;
+      font-weight: 500;
+      &:last-child {
+        color: $color_brand;
+      }
+    }
+  }
+  h2 {
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    color: $color_dark;
+  }
+  p {
+    color: $gray-color;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+  }
+  @include maxSmall {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.title_sections_inner {
+  margin-bottom: 3.125rem;
+  .before_title {
+    margin-bottom: 1.25rem;
+    span {
+      color: $color_dark;
+      font-size: 1rem;
+      font-weight: 500;
+      &:last-child {
+        color: $color_brand;
+      }
+    }
+  }
+  h2 {
+    font-size: 1.875rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    color: $color_dark;
+  }
+  p {
+    color: $gray-color;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+  }
+  .btn {
+    margin-top: 1.25rem;
+  }
+  @include maxSmall {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/*-----------------------------
+  loading_overlay
+-----------------------------*/
+.loaded_page {
+  #particles-js {
+    z-index: 12;
+  }
+  .loading_overlay {
+    opacity: 0;
+    pointer-events: none;
+    @include prefixer(transition, opacity 0.6s, webkit moz o ms);
+  }
+}
+.loading_overlay {
+  background-color: $color_light;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader_logo {
+    position: relative;
+    .logo {
+      @include prefixer(animation, text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both, webkit moz o ms);
+    }
+  }
+}
+
+.black_left {
+  @include prefixer(box-shadow, inset 60px 0px 0px 0px $black-color, webkit moz o ms);
+  @include maxMobile {
+    @include prefixer(box-shadow, inset 0px 0px 0px 0px $black-color, webkit moz o ms);
+  }
+}
+
+.shadow-none {
+  @include prefixer(box-shadow, nnoe, webkit moz o ms);
+}
+
+.filter-blur {
+  @include prefixer(background, rgba(255, 255, 255, 0.2), webkit moz o ms);
+  @include prefixer(backdrop-filter, saturate(1) blur(20px), webkit moz o ms);
+}
+
+.fixed-header {
+  .when-scroll {
+    .btn {
+      color: $color_dark !important;
+    }
+  }
+}

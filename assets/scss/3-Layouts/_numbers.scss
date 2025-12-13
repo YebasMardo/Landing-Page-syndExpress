@@ -1,0 +1,25 @@
+.item__number {
+    margin-bottom: 30px;
+    h4 {
+        color: $color_brand;
+    }
+    .icon {
+        margin-bottom: 20px;
+        text-align: left;
+        background: $color_dark;
+        height: 4rem;
+        width: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: auto;
+        margin-right: 20px;
+        [class^="ri-"] {
+            color: $color_white;
+            font-size: 1.7rem;
+        }
+    }
+}

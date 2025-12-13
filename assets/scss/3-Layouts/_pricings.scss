@@ -1,0 +1,454 @@
+.pricing {
+    position: relative;
+    .plans {
+        background: $color_white;
+        box-shadow: $shadow_3;
+        border-radius: 5px;
+        border: solid 1px #eaeaee;
+        padding: 0 0 20px;
+
+        @include before {
+            background-image: url(../img/decorations/4.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: -2rem;
+            z-index: -1;
+            right: -8rem;
+            height: 20rem;
+            width: 20rem;
+        }
+        @include after {
+            background-image: url(../img/decorations/3.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            bottom: -2rem;
+            z-index: -1;
+            left: -8rem;
+            height: 20rem;
+            width: 20rem;
+        }
+    }
+    .plan-item {
+        .plan_text {
+            margin-bottom: 0;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #b4bec74b;
+        }
+        &.has_style1 {
+            background: $color_white;
+            box-shadow: $shadow_3;
+            border-radius: 0.5rem;
+            position: relative;
+            transition: 0.25s $transition_function;
+            border-radius: 5px;
+            border: solid 1px #eaeaee;
+            margin-bottom: 30px;
+            &:hover {
+                transform: translateY(20px);
+            }
+            &.is_active {
+                background: $color_grad;
+                .plan-title {
+                    color: $color_white;
+                }
+                .plan_text {
+                    color: rgba(255, 255, 255, 0.74);
+                    margin-bottom: 0 !important;
+                }
+                .plan-price {
+                    color: $color_white;
+                }
+                .price-var {
+                    color: rgba(255, 255, 255, 0.74);
+                }
+                .list-items {
+                    .item {
+                        color: $color_white;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-.997-4L6.76 11.757l1.414-1.414 2.829 2.829 5.656-5.657 1.415 1.414L11.003 16z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+                            height: 20px;
+                            width: 20px;
+                            background-size: contain;
+                        }
+
+                        ion-icon {
+                            background: $color_brand;
+                            color: #fff;
+                            border-radius: 50%;
+                            padding: 2px;
+                            margin-right: 10px;
+                        }
+                        img {
+                            color: #fff;
+                            padding: 2px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        &.has_style2 {
+            @include md {
+                margin-bottom: 0;
+            }
+            &.is_active {
+                border-left: solid 1px #eaeaee;
+                border-right: solid 1px #eaeaee;
+                @include tablet_vert_screen {
+                    border-left: 0;
+                    border-right: 0;
+                    border-top: solid 1px #eaeaee;
+                    border-bottom: solid 1px #eaeaee;
+                }
+            }
+        }
+
+        .plan_head {
+            margin: 2rem;
+            margin-bottom: 0;
+            position: relative;
+
+            .type {
+                padding: 5px 10px;
+                background: #e6e7ec;
+                color: $color_neutral;
+                font-size: 14px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-radius: 3px;
+            }
+        }
+
+        .plan-title {
+            font-size: 30px;
+            color: $color_dark;
+            font-family: $font-primary;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .price-var {
+            color: $color_brand;
+            margin-left: 2px;
+            font-weight: 600;
+        }
+        .btn-plan {
+            padding: 25px 15px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        .plan-price {
+            font-size: 3.5rem;
+            line-height: 100%;
+            margin-bottom: 30px;
+            font-weight: 600;
+            &.has_dollar {
+                @include before {
+                    content: "$";
+                    font-size: 31px;
+                    top: -21px;
+                    left: -24px;
+                    color: #ffffffa6;
+                }
+            }
+            &.is_primary {
+                @include before {
+                    content: "$";
+                    font-size: 31px;
+                    top: -21px;
+                    left: -24px;
+                    color: $color_brand !important ;
+                }
+            }
+
+            @include md {
+                font-size: 2.5rem;
+            }
+        }
+
+        .list-items {
+            margin-bottom: 30px;
+            padding: 0;
+            margin-left: 0;
+            .item {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 30px;
+                color: #767c89;
+                font-size: 14px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-.997-4L6.76 11.757l1.414-1.414 2.829 2.829 5.656-5.657 1.415 1.414L11.003 16z' fill='rgb(190 52 95)'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    height: 20px;
+                    width: 20px;
+                    background-size: contain;
+                }
+
+                ion-icon {
+                    background: $color_brand;
+                    color: #fff;
+                    border-radius: 50%;
+                    padding: 2px;
+                    margin-right: 10px;
+                }
+                img {
+                    color: #fff;
+                    padding: 2px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        &.is-active {
+            position: relative;
+            z-index: 0;
+            padding-top: $spacer_40;
+            .plan_head {
+                background: $color_white;
+                box-shadow: $shadow_1;
+                margin: 0 40px 0;
+                border-radius: 30px;
+                @include before {
+                    background: url(../images/others/plan.svg);
+                    background-size: cover;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                }
+                .plan-title,
+                .plan-price {
+                    color: $color_dark;
+                }
+            }
+        }
+
+        .plan-body {
+            padding: 30px;
+        }
+    }
+    .plan-single {
+        background: $color_white;
+        box-shadow: $shadow_3;
+        border-radius: 5px;
+        border: solid 1px #eaeaee;
+        padding: 5rem;
+        @include md {
+            padding: 3rem;
+        }
+        .desc-plan {
+            max-width: 40rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include sm {
+            padding: 2rem;
+        }
+        &.top-header {
+            margin-top: -4rem;
+        }
+        .box_plan {
+            box-shadow: $shadow_3;
+            background: $color_grad;
+            color: white;
+            position: relative;
+            border-radius: $border_radius;
+            z-index: 0;
+            padding: 50px;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 25px;
+            color: white;
+        }
+        .price {
+            font-size: 6.25rem;
+            text-align: center;
+            color: white;
+        }
+        .width {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .billed {
+            margin-bottom: 20px;
+            color: white;
+        }
+        .pricing {
+            font-size: 35px;
+        }
+        .list-title {
+            margin-bottom: 20px;
+        }
+        .list_wrap {
+            padding-top: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-top: solid 1px #eaeaee;
+            border-bottom: solid 1px #eaeaee;
+        }
+        .list-items {
+            margin-bottom: 20px;
+            padding: 0;
+            margin-left: 0;
+            .item {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 30px;
+                color: #767c89;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-.997-4L6.76 11.757l1.414-1.414 2.829 2.829 5.656-5.657 1.415 1.414L11.003 16z' fill='rgb(190 52 95)'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    height: 20px;
+                    width: 20px;
+                    background-size: contain;
+                }
+
+                ion-icon {
+                    background: $color_brand;
+                    color: #fff;
+                    border-radius: 50%;
+                    padding: 2px;
+                    margin-right: 10px;
+                }
+                img {
+                    color: #fff;
+                    padding: 2px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .paragraph {
+            font-size: 13px;
+            text-align: center;
+            color: rgba($color_brand, 0.7);
+        }
+    }
+    .plan_list {
+        .tab_menu {
+            height: 2rem;
+            border-radius: 5px;
+            border: solid 1px $color_brand;
+            display: flex;
+            .type {
+                padding: 15px 20px;
+                a {
+                    color: $color_brand;
+                    display: block;
+                }
+            }
+        }
+
+        .plan_head {
+            background: $color_white;
+            box-shadow: $shadow_3;
+            border-radius: 5px;
+            border: solid 1px #eaeaee;
+            padding: 30px;
+            @include after {
+                background-image: url(../img/decorations/3.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                bottom: -5rem;
+                z-index: -1;
+                left: -4rem;
+                height: 20rem;
+                width: 20rem;
+            }
+            .plan-price {
+                font-size: 4rem;
+                line-height: 100%;
+                margin-bottom: 20px;
+                font-weight: 600;
+                &.has_dollar {
+                    @include before {
+                        content: "$";
+                        font-size: 31px;
+                        top: -21px;
+                        left: -24px;
+                        color: #ffffffa6;
+                    }
+                }
+                &.is_primary {
+                    @include before {
+                        content: "$";
+                        font-size: 31px;
+                        top: -21px;
+                        left: -24px;
+                        color: $color_brand !important ;
+                    }
+                }
+
+                @include md {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .plan_body {
+            background: $color_dark;
+            padding: 30px 30px 10px;
+            box-shadow: $shadow_3;
+            border-radius: 5px;
+        }
+        .list_items {
+            margin-bottom: 20px;
+            padding: 0;
+            margin-left: 0;
+            .item {
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                position: relative;
+                padding-left: 30px;
+                color: white;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-.997-4L6.76 11.757l1.414-1.414 2.829 2.829 5.656-5.657 1.415 1.414L11.003 16z' fill='rgb(190 52 95)'/%3E%3C/svg%3E");
+                    background-repeat: no-repeat;
+                    height: 20px;
+                    width: 20px;
+                    background-size: contain;
+                }
+
+                ion-icon {
+                    background: $color_brand;
+                    color: #fff;
+                    border-radius: 50%;
+                    padding: 2px;
+                    margin-right: 10px;
+                }
+                img {
+                    color: #fff;
+                    padding: 2px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

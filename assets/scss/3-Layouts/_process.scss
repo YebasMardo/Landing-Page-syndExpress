@@ -1,0 +1,199 @@
+.process {
+    &.has_style1 {
+    }
+    &.has_style2 {
+        .timeline-primary .timeline-item::before {
+            background: $color_grad;
+            color: #fff;
+            border-radius: 5px;
+        }
+    }
+    .timeline {
+        padding-left: 0;
+        list-style-type: none;
+        background: $color_dark;
+        border-radius: 20px;
+        padding: 60px 30px;
+        box-shadow: 0 36px 66px -42px #11164e;
+    }
+
+    .timeline-item {
+        position: relative;
+        display: block;
+        text-align: center;
+        counter-increment: timeline-counter;
+        h4 {
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.719);
+        }
+
+        &::before {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            margin: 0 auto 1rem;
+            font-size: 2rem;
+            border-radius: 50%;
+            content: counter(timeline-counter);
+            line-height: 100%;
+            font-family: $font-primary;
+        }
+        &::after {
+            position: absolute;
+            top: 2rem;
+            left: 0;
+            right: 0;
+            display: none;
+            border-top: 2px solid;
+            content: "";
+        }
+        &:first-child::after {
+            left: 50%;
+            width: 50%;
+        }
+        &:last-child::after {
+            width: 50%;
+        }
+    }
+
+    .timeline-item + .timeline-item {
+        margin-top: 2rem;
+    }
+
+    .timeline-primary .timeline-item::before {
+        background: $color_brand;
+        color: #fff;
+    }
+
+    .timeline-primary .timeline-item.active::before {
+        background: $color_grad !important;
+    }
+
+    .timeline-primary .timeline-item::after {
+        border-color: #bcb6f6;
+    }
+
+    .timeline-primary .timeline-item.active::after {
+        border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .timeline-secondary .timeline-item::before {
+        background-color: #b5b6c5;
+        color: #fff;
+    }
+
+    .timeline-expand-xs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .timeline-expand-xs .timeline-item {
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+
+    .timeline-expand-xs .timeline-item::after {
+        display: block;
+    }
+
+    .timeline-expand-xs .timeline-item + .timeline-item {
+        margin-top: 0;
+    }
+
+    @media (min-width: 576px) {
+        .timeline-expand-sm {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .timeline-expand-sm .timeline-item {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .timeline-expand-sm .timeline-item::after {
+            display: block;
+        }
+
+        .timeline-expand-sm .timeline-item + .timeline-item {
+            margin-top: 0;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .timeline-expand-md {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .timeline-expand-md .timeline-item {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .timeline-expand-md .timeline-item::after {
+            display: block;
+        }
+
+        .timeline-expand-md .timeline-item + .timeline-item {
+            margin-top: 0;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .timeline-expand-lg {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .timeline-expand-lg .timeline-item {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .timeline-expand-lg .timeline-item::after {
+            display: block;
+        }
+
+        .timeline-expand-lg .timeline-item + .timeline-item {
+            margin-top: 0;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .timeline-expand-xl {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .timeline-expand-xl .timeline-item {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .timeline-expand-xl .timeline-item::after {
+            display: block;
+        }
+
+        .timeline-expand-xl .timeline-item + .timeline-item {
+            margin-top: 0;
+        }
+    }
+}

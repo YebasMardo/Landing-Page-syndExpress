@@ -1,0 +1,139 @@
+.team {
+    .team_box {
+        &.has_style1 {
+            margin-bottom: $spacer_30;
+            position: relative;
+            .team-name {
+                text-align: center;
+            }
+            .team-social {
+                background-color: white;
+                position: absolute;
+                top: 44%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 10px 20px;
+                border-radius: 50px;
+                box-shadow: $shadow_1;
+                margin-top: -20px;
+                transition: 0.35s $transition_function;
+                opacity: 0;
+                z-index: 1;
+                ul {
+                    display: flex;
+                }
+                a {
+                    color: $color_dark;
+                    margin: 0 5px;
+                    line-height: 100%;
+                    &:hover {
+                        color: $color_brand;
+                    }
+                    svg {
+                        height: 0.8rem;
+                    }
+                    [class^="ri-"] {
+                        font-size: 22px;
+                        line-height: 100%;
+                        padding-top: 10px;
+                    }
+                }
+            }
+            .badge_team {
+                position: absolute;
+                top: -10px;
+                z-index: 1;
+                background: $color_brand;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 5px 10px;
+                border-radius: $border_radius;
+                color: white;
+                font-size: 13px;
+            }
+
+            .team-img {
+                overflow: hidden;
+                margin-bottom: 20px;
+                border-radius: 12px;
+                position: relative;
+                z-index: 0;
+                border: solid 10px $color_white;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+                @include overlay {
+                    z-index: 1;
+                    opacity: 0;
+                    transition: 0.2s $transition_function;
+                }
+            }
+            &:hover {
+                .team-social {
+                    margin-top: 0;
+                    opacity: 1;
+                }
+                .team-img {
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &.has_style2 {
+            margin-bottom: $spacer_30;
+            position: relative;
+
+            .team_name {
+                text-align: center;
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                z-index: 2;
+                color: $color_white;
+                opacity: 0;
+                transition: 0.3s $transition_function;
+                transform: translateY(2rem);
+            }
+            .team_type {
+                transform: translateY(2rem);
+            }
+            .team_img {
+                height: 20rem;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                border: solid 10px $color_white;
+                border-radius: 10px;
+                box-shadow: $shadow_3;
+                overflow: hidden;
+                margin-bottom: 20px;
+                position: relative;
+                z-index: 0;
+                transition: all 0.3 $transition_function;
+
+                img {
+                    object-fit: cover;
+
+                    width: 100%;
+                }
+                @include overlay {
+                    z-index: 1;
+                    background: linear-gradient(45deg, rgba(0, 0, 0, 0.522), transparent) !important;
+                    transition: 0.3s $transition_function;
+                }
+            }
+            &:hover {
+                .team_img {
+                    transform: translateY(10px);
+                }
+                .team_name,
+                .team_type {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}

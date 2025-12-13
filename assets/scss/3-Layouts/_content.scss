@@ -1,0 +1,118 @@
+.content {
+    .left_icon {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background: $color_grad;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        [class^="ri-"] {
+            color: $color_white;
+            font-size: 1.7rem;
+        }
+    }
+    .list {
+        border-radius: $border_radius;
+        padding: 10px 20px;
+        background: $color_brand_light;
+        margin-bottom: 20px;
+        strong {
+            color: $color_dark;
+        }
+        &.has_style1 {
+            background: white;
+            box-shadow: $shadow_3;
+            border: solid 1px rgb(232, 234, 238);
+            .icon {
+                margin-right: 20px;
+                display: flex;
+                align-items: center;
+            }
+            [class^="ri-"],
+            [class*=" ri-"] {
+                font-size: 22px;
+                color: $color_brand;
+            }
+        }
+
+        &.has_style2 {
+            .icon {
+                height: 3rem;
+                width: 3rem;
+                background: $color_white;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 20px;
+
+                flex: none;
+                [class^="ri-"],
+                [class*=" ri-"] {
+                    font-size: 22px;
+                }
+            }
+        }
+
+        &.has_style3 {
+            border-radius: $border_radius;
+            padding: 0;
+            background: $color_white;
+            margin-bottom: 0;
+            .icon {
+                height: 3rem;
+                background: $color_white;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                flex: none;
+                [class^="ri-"],
+                [class*=" ri-"] {
+                    font-size: 22px;
+                    color: $color_brand;
+                }
+            }
+        }
+    }
+    .number_wrap {
+        background: $color_dark;
+        padding: 60px 30px;
+        box-shadow: 0 36px 66px -42px #11164e;
+        border-radius: 5px;
+        position: absolute;
+        width: max-content;
+        left: 0;
+        min-width: 38rem;
+        @include tablet_vert_screen {
+            position: relative;
+            min-width: 0;
+            width: -webkit-fill-available;
+            margin: 0 15px 60px;
+            padding: 30px 15px;
+        }
+    }
+
+    .content_numbers {
+        text-align: center;
+        background-color: $color_dark;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        color: white;
+        padding: 10px;
+        p {
+            color: white;
+        }
+    }
+
+    /*====================================
+        ========= in software
+    =====================================*/
+    &.in_software {
+        .soft_img {
+            width: 100%;
+        }
+    }
+}

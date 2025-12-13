@@ -1,0 +1,131 @@
+.footer {
+  padding: 100px 0 50px;
+  &.has_style1 {
+    background: $color_dark;
+    .copyright {
+      color: $color_white;
+      opacity: 0.7;
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .list-title {
+      color: $color_white;
+    }
+
+    .social_footer {
+      a,
+      i {
+        color: white;
+      }
+    }
+
+    .list-items {
+      color: $color_white;
+      li {
+        a {
+          color: $color_white;
+          opacity: 0.85;
+          &:hover {
+            color: $color_brand;
+          }
+        }
+      }
+    }
+  }
+
+  &.has_style2 {
+    background: $color_white;
+  }
+
+  .footer_text {
+    max-width: 30rem;
+    margin-left: 0;
+  }
+  .social_footer {
+    a,
+    i {
+      color: $color_dark;
+      font-size: 1.5rem;
+    }
+  }
+
+  .footer-desc {
+    margin-bottom: 2rem;
+
+    .logo {
+      margin-bottom: 1rem;
+
+      img {
+        height: 2.5rem;
+      }
+    }
+
+    .social-footer {
+      margin-top: 1rem;
+
+      a {
+        img {
+          width: 18px;
+          margin-right: 8px;
+        }
+        ion-icon {
+          font-size: 25px;
+          color: white;
+        }
+      }
+    }
+  }
+
+  // ---------------------------------- footer list
+
+  .list-title {
+    font-size: 1.1rem;
+    position: relative;
+    margin-bottom: 1.3rem;
+  }
+
+  .list-items {
+    margin-bottom: 2rem;
+
+    li {
+      margin-bottom: 1rem;
+
+      a {
+        color: $color_dark_lighten;
+        &:hover {
+          padding-left: 0.5rem;
+          color: $color_brand;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 35px;
+    font-size: 14px;
+
+    margin-bottom: 0;
+
+    p {
+      padding: 2rem 0 2rem;
+      font-size: 1rem;
+      margin: 0;
+      color: rgb(165, 165, 165);
+    }
+  }
+}
+
+.footer_index {
+  background: $color_dark !important;
+  img {
+    max-height: 40px;
+  }
+  padding: 20px 0;
+  .links {
+    a {
+      color: $color_brand_light;
+      padding: 0 5px;
+      text-transform: lowercase;
+    }
+  }
+}
