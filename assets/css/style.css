@@ -3055,6 +3055,12 @@ input[type="submit"].btn-outline.disabled:hover {
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
 }
+
+.inscription {
+    background: gainsboro;
+    color: black;
+}
+
 .btn-primary.btn-sh {
     -webkit-box-shadow: 0 14px 35px -11px #46748b;
     box-shadow: 0 14px 35px -11px #46748b;
@@ -3076,9 +3082,11 @@ input[type="submit"].btn-outline.disabled:hover {
 }
 .btn-primary:hover {
     outline: 0;
-    background: #b63266 !important;
+    background: black !important;
+    color: white;
     border: 2px solid #46748b;
 }
+
 .btn-secondary {
     background: #683769;
     color: #fff;
