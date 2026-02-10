@@ -225,32 +225,7 @@ $(function () {
 			prevEl: ".swiper-button-prev",
 		},
 	});
-	var mySwiper = new Swiper(".swiper_showcase", {
-		// Optional parameters
-		loop: true,
-		slidesPerView: 3,
-		spaceBetween: 25,
-		centeredSlides: true,
-		breakpoints: {
-			// when window width is >= 320px
-			320: {
-				slidesPerView: 1,
-			},
-			// when window width is >= 480px
-			768: {
-				slidesPerView: 2,
-			},
-			1000: {
-				slidesPerView: 3,
-			},
-		},
 
-		// Navigation arrows
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-	});
 	var mySwiper = new Swiper(".swiper_hero", {
 		// Optional parameters
 		loop: true,
